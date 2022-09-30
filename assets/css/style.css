@@ -108,24 +108,23 @@ h1, h2 {
 }
 
 #club-ethos {
-    height: 100%;
-    margin-bottom: 15%;
+    height: 600px;
 }
 
 #left-about{
     padding-top: 30px;
-    width: 30%;
+    width: 33%;
     float: left;
 }
 
 #right-about{
     padding-top: 30px;
-    width: 30%;
+    width: 33%;
     float: right;
 }
 
 #center-about{
-    width: 30%;
+    width: 33%;
     padding-top: 30px;
     margin: 0 auto;
 }
@@ -135,7 +134,7 @@ hr {
     width: 100%;
     margin: 5px 0;
 }
-#left-about-heading {
+.left-about-heading {
     width: 60%;
     float: right;
     line-height: 20px;
@@ -143,7 +142,7 @@ hr {
     margin-bottom: 50px;
 }
 
-#right-about-heading {
+.right-about-heading {
     width: 60%;
     float: left;
     line-height: 20px;
@@ -151,24 +150,24 @@ hr {
     margin-bottom: 50px;
 }
 
-#right-about-heading h2 {
+.right-about-heading h2 {
     text-align: right;
     /* i add this make closer the h2 to the line */
     margin-bottom: 0px;
 }
 
-#right-about-heading p {
+.right-about-heading p {
     text-align: right;
     /* i add this make closer the p to the line */
     margin-top: 0px;
 }
 /* i add this make closer the h2 to the line */
-#left-about-heading h2 {
+.left-about-heading h2 {
     margin-bottom: 0%;
 }
 
 /* i add this make closer the p to the line */
-#left-about-heading p {
+.left-about-heading p {
     margin-top: 0%;
 }
 
@@ -254,7 +253,7 @@ footer ul {
 
 /* for larger to medium screens size from 1200px wide down */
 
-@media screen and (max-widht: 1200px) {
+@media screen and (max-width: 1200px) {
     #club-ethos {
         width: 65%;
         height: 1200px;
@@ -284,12 +283,36 @@ footer ul {
 /* for medium screen sizes from 950px wide and down */
 
 @media screen and (max-width: 950px) {
-#menu {
-   clear: left;
-   float: left;
-   margin-left: 30px;
-   margin-bottom: 20px;
-   line-height: 25px;
-} 
+
+   #menu {
+      clear: left;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 20px;
+      line-height: 25px;
+   } 
+
+   #cover-text {
+      left: 0;
+   }
+
+   #club-ethos {
+    width: 90%;
+    height: 1200px;
+    margin: 0 auto;
+   }
+   .left-about-heading, .right-about-heading {
+    width: inherit;
+   }
+
+   .left-about-heading h2, .right-about-heading h2 {
+    width: 100%;
+    text-align: center;
+   }
+
+   .left-about-heading p, .right-about-heading p {
+    text-align: center;
+    padding: 0 20px;
+   }
     
 }
