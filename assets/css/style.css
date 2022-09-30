@@ -239,4 +239,15 @@ footer ul {
     color: #3a3a3a;
 }
 
+#photo {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photo > img {
+    width: 100%;
+}
+
 
